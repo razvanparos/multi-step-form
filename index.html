@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+  <main class="main">
+    <div class="content">
+      <section class="left-steps">
+        <div class="step space">
+          <div class="circle active">1</div>
+          <div class="step-text">
+            <p>STEP 1</p>
+            <h1>YOUR INFO</h1>
+          </div>
+        </div>
+        <div class="step space">
+          <div class="circle">2</div>
+          <div>
+            <p>STEP 2</p>
+            <h1>SELECT PLAN</h1>
+          </div>
+        </div>
+        <div class="step space">
+          <div class="circle">3</div>
+          <div>
+            <p>STEP 3</p>
+            <h1>ADD-ONS</h1>
+          </div>
+        </div>
+        <div class="step space">
+          <div class="circle">4</div>
+          <div>
+            <p>STEP 4</p>
+            <h1>SUMMARY</h1>
+          </div>
+        </div>
+      </section>
+    <section class="right-form">
+      <div class="pannel ">
+        <div class="top">
+        <h1>Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+      </div>
+      <div> 
+        <div class="inputlabel">
+          <label for="">Name <span class="error hidden">This field is required</span></label>
+          <input type="text" placeholder="e.g. Stephen King" class="nameInp">
+        </div>
+        <div class="inputlabel">
+          <label for="">Email Address <span class="error hidden">This field is required</span></label>
+          <input type="text" placeholder="e.g. stephenking@lorem.com" class="emailInp">
+        </div>
+        <div class="inputlabel">
+          <label for="">Phone Number <span class="error hidden">This field is required</span></label>
+          <input type="number" placeholder="e.g. +1 234 567 890" class="phoneInp" maxlength="10">
+        </div>
+        
+      </div>
+      </div>
+      <div class="pannel hidden">
+        <div class="top"  >
+        <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+      </div>
+      <div class="plans">
+          <div class="square">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div class="gap">
+              <h1>Arcade</h1>
+              <p class="plan-p">$<span class="plan-value">9</span>/mo</p>
+              <p class=" free hidden">2 months free</p>
+            </div>
+          </div>
+          <div class="square">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div class="gap">
+              <h1>Advanced</h1>
+              <p class="plan-p">$<span class="plan-value">12</span>/mo</p>
+              <p class=" free hidden">2 months free</p>
+            </div>
+          </div>
+          <div class="square">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div class="gap">
+              <h1>Pro</h1>
+              <p class="plan-p">$<span class="plan-value">15</span>/mo</p>
+              <p class=" free hidden">2 months free</p>
+            </div>
+          </div>
+          
+      </div>
+      <div class="monthly-yearly">
+        <h1 class="monthly on-color">Monthly</h1>
+        <label class="switch">
+          <input type="checkbox" class="onoff">
+          <span class="slider round"></span>
+        </label>
+        <h1 class="yearly off-color">Yearly</h1>
+      </div>
+      </div>
+
+      <div class="pannel hidden">
+        <div class="top"  >
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div class="options-list">
+            <div class="options">
+              <input type="checkbox">
+              <div class="option-desc">
+                <h1>Online service</h1>
+                <p>Access to multiplayer games</p>
+              </div>
+              <p class="plan-p">+$<span class="plan-value">1</span>/mo</p>
+            </div>
+            <div class="options">
+              <input type="checkbox">
+              <div class="option-desc">
+                <h1>Larger storage</h1>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <p class="plan-p">+$<span class="plan-value">2</span>/mo</p>
+            </div>
+            <div class="options">
+              <input type="checkbox">
+              <div class="option-desc">
+                <h1>Customizable profile</h1>
+                <p>Custom theme on your profile</p>
+              </div>
+              <p class="plan-p">+$<span class="plan-value">2</span>/mo</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="pannel hidden">
+        <div class="top"  >
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="details">
+          <div class="summary-top">
+            <div>
+              <h1 class="selected-plan"><span class="selected-plan-total">Arcade</span>  <span class="selected-period">(Monthly)</span></h1>
+              <p class="change-btn">Change</p>
+            </div>
+            <p class="plan-price">$<span class="final-plan-price">9</span><span class="final-total-period">/mo</span></p>
+          </div>
+          
+          <span class="line"></span>
+          <div class="addons-total hidden">
+            <p>Online service</p> <p>+$<span class="summary-options">1</span><span class="final-total-period">/mo</span></p>
+          </div>
+          <div class="addons-total hidden">
+            <p>Larger storage</p> <p>+$<span class="summary-options">2</span><span class="final-total-period">/mo</span></p>
+          </div>
+          <div class="addons-total hidden">
+            <p>Customizable profile</p> <p>+$<span class="summary-options">2</span><span class="final-total-period">/mo</span></p>
+          </div>
+        </div>
+        <div class="total-div">
+          <p>Total <span class="permonth">(per month)</span></p><p>$<span class="summary-total-price">14</span><span class="final-total-period">/mo</span></p>
+        </div>
+      </div>
+
+      <div class="final pannel hidden">
+        <img src="./assets/images/icon-thank-you.svg" alt="">
+        <h1>Thank you!</h1>
+        <p>Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</p>
+      </div>
+      
+
+      <div class="btn-div">
+        <button class="back hidden2">Go Back</button>
+        <button class="next">Next Step</button>
+      </div>
+    
+    </section>
+    
+    </div>
+    
+
+
+  </main>
+
+
+  
+</body>
+<script src="index.js"></script>
+</html>
