@@ -64,7 +64,7 @@ body{
     padding: 20px 50px;
     border-radius: 10px;
     width: calc(30%);
-    background:linear-gradient(rgb(2, 2, 126), rgb(141, 167, 201));
+    background:linear-gradient(var(--Marineblue),rgb(169, 146, 212));
     display: flex;
     flex-direction: column;
     row-gap: 25px;
@@ -487,7 +487,7 @@ input{
       font-size: 1rem;
     }
     .left-steps{
-      background:linear-gradient(0.3turn,blue, rgb(120, 156, 204));
+      background:linear-gradient(0.3turn,var(--Marineblue),rgb(169, 146, 212));
     }
   }
 
