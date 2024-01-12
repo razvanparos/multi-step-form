@@ -110,7 +110,7 @@ body{
 
 .right-form{
     display: flex;
-    width: 70%;
+    width: 90%;
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
@@ -509,6 +509,31 @@ input{
   }
 
   @media (max-width: 744px){
+    .options input{
+      scale: 0.7
+    }
+    .final{
+      position: absolute;
+      bottom: 1%;
+      right: 1%;
+      row-gap: 10px;
+    }
+    .final p{
+      scale: 0.9;
+    }
+    .pannel{
+      margin-top: 8px;
+    }
+    .next{
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      scale: 0.9;
+    }
+    .back{
+      position: absolute;
+      bottom: 20px;
+    }
     .btn-div{
       margin-bottom: 50px;
     }
@@ -536,9 +561,11 @@ input{
       text-align: center;
      }
      .plans{
+      margin-top: -40px;
+      scale: 0.9;
       flex-direction: column;
       height: fit-content;
-      row-gap: 30px;
+      row-gap: 10px;
      }
      label{
       font-size: 0.8rem;
@@ -562,7 +589,7 @@ input{
       overflow-x: hidden;
      }
      .options{
-      padding: 7px;
+      padding: 15px;
       
      }
     .options h1{
@@ -573,6 +600,10 @@ input{
     }
     .monthly-yearly h1{
       font-size: 0.9rem;
+      
+    }
+    .monthly-yearly{
+      margin-top: -10px;
     }
     .switch{
       width: 60px;
